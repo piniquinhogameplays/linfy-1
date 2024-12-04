@@ -1,5 +1,6 @@
 <?php
 require 'config_db.php'; // Inclui a configuração do banco de dados
+require 'security.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Recebe os valores do formulário

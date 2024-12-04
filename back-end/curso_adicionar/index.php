@@ -1,6 +1,8 @@
 <?php
 // Conexão com o banco de dados
 require "config_db.php";
+require 'security.php';
+
 
 // Caso de algum erro 
 
