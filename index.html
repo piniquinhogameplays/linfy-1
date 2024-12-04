@@ -382,6 +382,14 @@
     </footer>
     
     <script>
+
+
+if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw,js')
+            .then(() => console.log('Service Worker registrado com sucesso!'))
+            .catch((error) => console.error('Falha ao registrar o Service Worker:', error));
+    }
+
                 // Seleciona o botão e o corpo
 const toggleButton = document.getElementById('toggleMode');
 const body = document.body;
